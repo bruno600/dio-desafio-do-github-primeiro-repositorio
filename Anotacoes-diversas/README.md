@@ -10,9 +10,9 @@
 ## Throwable
 ### Error (lançados pela JVM)
 -  Não são tratáveis(Ex: falta de memória).
-### RuntimeException (Unchecked Exception)
+### Runtime Exception (Unchecked Exception)
 - Não precisa necessariamente ser tratada.
-### Resto da Exception (Checked Exception)
+### Resto das Exception (Checked Exception)
 - Precisam ser tratadas.
 ```mermaid
   graph TD;
