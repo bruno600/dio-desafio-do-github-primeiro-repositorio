@@ -21,3 +21,36 @@
     Exception --> id2["Others Exceptions (Checked)"];
     Exception --> id1["Runtime Exception (Unchecked)"];
 ```
+
+# Collections
+```mermaid
+  graph TD;
+    c["<</>interface</>> <br /> Collection"] --> s["<</>interface</>> <br /> Set"];
+    c --> l["<</>interface</>> <br /> List"];
+    c --> q["<</>interface</>> <br /> Queue"];
+    
+    s --> hs("HashSet");
+    hs --> lhs(LinkedHashSet);
+    s --> ss["<</>interface</>> <br /> SortedSet"];
+    ss --> ns["<</>interface</>> <br /> NavigableSet"];
+    ns --> ts(TreeSet);
+    
+    l --> lal(ArrayList);
+    l --> lv(Vector);
+    l --> lll(LinkedList);
+    q --> lll
+    
+    q --> qpq(PriorityQueue);
+    
+    m["<</>interface</>> <br /> Map"] --> mht(Hashtable);
+    m --> mhm(HashMap);
+    mhm --> lhm(LinkedHashMap);
+    
+    m --> sm["<</>interface</>> <br /> SortedMap"];
+    sm --> nm["<</>interface</>> <br /> NavigableMap"];
+    
+    
+    nm --> mtm(TreeMap);
+    
+```
+
